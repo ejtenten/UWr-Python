@@ -1,3 +1,5 @@
+# Tylko podpunkt a!
+
 def fTrec(n: int, m: int):
     print(f'Wywołano: {n} - {m}')
     if m == 0:
