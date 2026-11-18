@@ -1,15 +1,19 @@
-from random import choice
+from random import randint
 
 def randperm(n):
     if n == 0:
         return 0
     lista = []
-    lista2 = []
     for _ in range(n):
-        lista2.append(_)
+        lista.append(_)
 
     for i in range(n):
-        lista.append(choice(lista2))
+        losowa = randint(0, n - 1)
+        element = lista[losowa]
+        element1 = lista[i]
+
+        lista[i] = element
+        lista[losowa] = element1
 
     return lista
     

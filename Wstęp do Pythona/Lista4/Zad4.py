@@ -14,7 +14,7 @@ def palindromy(a, b):
         if lista[i] != 0 and liczba == liczba[::-1]:
             wynik.append(i)
 
-    return wynik
+    return lista
 
 
 print(palindromy(90, 200))
